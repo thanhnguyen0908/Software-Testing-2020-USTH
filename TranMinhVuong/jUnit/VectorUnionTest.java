@@ -23,10 +23,7 @@ public class VectorUnionTest {
     
     @BeforeClass
     public static void setUpClass() {
-        Vector A = new Vector();
-        Vector B = new Vector();
-        for(int i = 0;i<10;i++) A.add(i);
-        for(int i = -10;i<0;i++) B.add(i);
+        ;
     }
     
     @AfterClass
@@ -41,19 +38,18 @@ public class VectorUnionTest {
         System.out.println("UnionAll");
         Vector A = new Vector();
         Vector B = new Vector();
-        for(int i = 0;i<10;i++) A.add(i);
-        for(int i = -10;i<0;i++) B.add(i);
-        Vector c = VectorUnion.UnionAll(A,B );
-        for(int i = -10;i<10;i++){
-            assertTrue(c.contains(i));
+        for(int i = 0;i<=10;i++) A.addElement(i);
+        for(int i = -10;i<=0;i++) B.addElement(i);
+        Vector c = VectorUnion.UnionAll(A,B);
+        for(int i = -10;i<=10;i++){
+            assert(c.contains(i));
         }
-        assertFalse(c.contains(-10000));
-        assertFalse(c.contains(10000));
-        assertFalse(c.contains(20));
-        assertFalse(c.contains(-20));
-        assertFalse(c.contains("Abc"));
+        assertTrue(c.contains(-100000));
+        assertTrue(c.contains(10000));
+        assertTrue(c.contains(10));
+        assertTrue(c.contains(-10));
+        assertTrue(c.contains("Abc"));
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
     
 }
