@@ -23,32 +23,35 @@ public class VectorUnionTest {
     
     @BeforeClass
     public static void setUpClass() {
-        ;
+        
     }
     
     @AfterClass
     public static void tearDownClass() {
     }
 
+    
     /**
      * Test of UnionAll method, of class VectorUnion.
      */
     @Test
     public void testUnionAll() {
         System.out.println("UnionAll");
+        
         Vector A = new Vector();
         Vector B = new Vector();
         for(int i = 0;i<=10;i++) A.addElement(i);
         for(int i = -10;i<=0;i++) B.addElement(i);
         Vector c = VectorUnion.UnionAll(A,B);
+        
         for(int i = -10;i<=10;i++){
-            assert(c.contains(i));
+            assertTrue("Cool",c.contains(i));
         }
-        assertTrue(c.contains(-100000));
-        assertTrue(c.contains(10000));
+        assertFalse("Cool",c.contains(-100000));
+        assertFalse(c.contains(10000));
         assertTrue(c.contains(10));
         assertTrue(c.contains(-10));
-        assertTrue(c.contains("Abc"));
+        assertFalse(c.contains("Abc"));
         // TODO review the generated test code and remove the default call to fail.
     }
     
