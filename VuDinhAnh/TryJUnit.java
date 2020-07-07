@@ -18,7 +18,7 @@ class Mathology
     }
 }
 
-public class TryJunit
+public class TryJUnit
 {
     @Test
     public static void Test_to_binary()
