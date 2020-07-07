@@ -26,11 +26,12 @@ public static Vector union (Vector a,Vector b)
 // Fixed method
 
 
-public static Vector UnionAll (Vector a,Vector b)
+public class VectorUnion {
+   public static Vector UnionAll (Vector a,Vector b)
 {	
 	int s = 0;
 	
-	Vector<Object> c = Vector (a.size()+b.size());
+	Vector c = new Vector(a.size()+b.size());
 	for(int i = 0;i<a.size();i++){
 	Object x = a.get(i);
 	c.add(x);
@@ -40,5 +41,5 @@ public static Vector UnionAll (Vector a,Vector b)
 	c.add(x);
 	}
 	return c;
-} 
-
+}
+}
