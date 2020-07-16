@@ -14,6 +14,11 @@ public class Calc {
     }
 
     static int divide(int a, int b) {
-       return 0;
+       if (b == 0) {
+           throw new ArithmeticException("Cannot divided by zero!");
+       }
+       else {
+           return a / b;
+       }
     }
 }
