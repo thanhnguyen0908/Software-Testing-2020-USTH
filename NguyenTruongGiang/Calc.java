@@ -20,8 +20,12 @@ public class Calc
         return a * b;
     }
 
-    static public int divide(int a, int b)
+    static public float divide(int a, int b)
     {
-        return a / b;
+        if (b == 0){
+            throw new ArithmeticException ("Can't divide by 0");
+        }
+        else
+            return (float) a / b;
     }
 }
