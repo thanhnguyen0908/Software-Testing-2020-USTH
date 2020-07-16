@@ -17,7 +17,7 @@ public class CalcTest
     @Test  //Test case for subtraction
     public void testSubtract()
     {
-        assertTrue("Subtraction incorrect", 10 == Calc.subract(15, 5));
+        assertTrue("Subtraction incorrect", 10 == Calc.subtract(15, 5));
     }
 
     @Test //Test case for multiplication
