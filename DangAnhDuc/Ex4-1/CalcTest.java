@@ -33,4 +33,9 @@ public class CalcTest
     public void testDevideByZero(){
         Calc.divide(53,0);
     }
+
+    @Test
+    public void testDivideFloat(){
+        assertTrue("Result is wrong", 5.5 == Calc.divide(11,2));
+    }
 }

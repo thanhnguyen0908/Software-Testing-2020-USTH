@@ -21,7 +21,7 @@ public class Calc
         return a * b;
     }
 
-    static public float divide (int a, int b)
+    static public float divide (float a, float b)
     {
         if (b == 0){
             throw new ArithmeticException ("Can't divide by 0");
