@@ -2,7 +2,7 @@ package test;
 
 public class Calc {
     static int add(int a, int b) {
-        return 0;
+        return a + b;
     }
 
     static int subtract(int a, int b) {
