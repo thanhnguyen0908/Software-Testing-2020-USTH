@@ -28,4 +28,9 @@ public class CalcTest
     public void testDivide(){
         assertTrue("Result is wrong", 9 == Calc.divide(99,11));
     }
+
+    @Test (expected = ArithmeticException.class)
+    public void testDevideByZero(){
+        Calc.divide(53,0);
+    }
 }
