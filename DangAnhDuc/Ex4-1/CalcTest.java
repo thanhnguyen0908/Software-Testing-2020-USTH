@@ -23,4 +23,9 @@ public class CalcTest
     public void testMult(){
         assertTrue("Product is wrong", 15 == Calc.mult(3,5));
     }
+
+    @Test
+    public void testDivide(){
+        assertTrue("Result is wrong", 9 == Calc.divide(99,11));
+    }
 }
