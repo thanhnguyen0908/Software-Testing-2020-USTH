@@ -18,4 +18,9 @@ public class CalcTest
     public void testSub(){
         assertTrue("The difference is incorrect", 20 == Calc.sub(50,30));
     }
+
+    @Test
+    public void testMult(){
+        assertTrue("Product is wrong", 15 == Calc.mult(3,5));
+    }
 }
