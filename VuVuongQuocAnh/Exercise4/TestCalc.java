@@ -29,4 +29,9 @@ public class TestCalc {
     public void TestDividedByZero() {
         Calc.divide(10, 0);
     }
+
+    @Test
+    public  void TestFailMultiply() {
+        assertEquals(300, Calc.multiply(10, 20));
+    }
 }
