@@ -11,5 +11,9 @@ public class Calc
       return a - b;
    }
 
+   static public int mul (int a, int b)
+   {
+      return a * b;
+   }
 
 }
