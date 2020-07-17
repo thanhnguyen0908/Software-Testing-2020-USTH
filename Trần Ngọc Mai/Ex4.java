@@ -8,13 +8,13 @@ import java.util.*;
 @RunWith (Parameterized.class)
 public class Ex4
 {
-   public int a, b, sum;
+   public int a, b, ans;
 
-   public Ex4 (int a, int b, int sum)
+   public Ex4 (int a, int b, int ans)
    {
       this.a = a;
       this.b = b;
-      this.sum = sum; 
+      this.ans = ans; 
    }
 
   @Parameters
@@ -26,24 +26,24 @@ public class Ex4
   @Test
   public void additionTest()
   {
-     assertTrue ("Addition Test", sum == Calc.add (a,b));
+     assertTrue ("Addition Test", ans == Calc.add (a,b));
   }
 
   @Test
   public void subtractionTest()
   {
-     assertTrue ("Subtraction Test", sum == Calc.sub (a,b));
+     assertTrue ("Subtraction Test", ans == Calc.sub (a,b));
   }
 
   @Test
   public void multiplicationTest()
   {
-     assertTrue ("Multiplication Test", sum == Calc.mul (a,b));
+     assertTrue ("Multiplication Test", ans == Calc.mul (a,b));
   }
 
   @Test
   public void devideTest()
   {
-     assertTrue ("Devide Test", sum == Calc.div (a,b));
+     assertTrue ("Devide Test", ans == Calc.div (a,b));
   }
 }
