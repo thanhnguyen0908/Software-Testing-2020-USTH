@@ -1,0 +1,20 @@
+2. It is possible to modify an ArrayList without using the remove() method and yet have a subsequent call to remove() fail to throw ConcurrentModificationException. Develop a (failing!) JUnit test that exhibits this behavior.
+
+Answer:
+List dayList= new ArrayList();
+dayList.add("Sunday");
+dayList.add("Monday");
+dayList.add("Tuesday");
+dayList.add("Wednesday");
+dayList.add("Thursday");    // Added by Kuldeep
+dayList.remove("Tuesday");
+Iterator itr=dayList.iterator();
+while(itr.hasNext())
+{
+    Object testList=itr.next();
+    if(testList.equals("Monday"))
+    {
+        dayList.remove(testList);
+    }
+}
+System.out.println(dayList);
