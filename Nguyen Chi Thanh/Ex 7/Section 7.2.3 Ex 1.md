@@ -21,7 +21,7 @@ table indicates whether each test path tours each du-path with or without a side
 t1 |i      |
 t2 |       |i
 t3 |ii     |i
-t4 |iv	   |
+t4 |iv	  |
 t5 |iii, v |
 t6 |       |iii, iv, v
 
@@ -29,6 +29,6 @@ d) Either t1 or t3 can be used to directly tour a path that satisfies all-defs f
 directly tour a path that satisfies all-defs for the def at node 3.
 Possible answers: {t1, t4} or {t1, t5} or {t3, t4} or {t3, t5}
 
-e) {t1, t3, t5}
+e)  {t1, t3, t5}
 
 f ) {t1, t3, t4, t5}
