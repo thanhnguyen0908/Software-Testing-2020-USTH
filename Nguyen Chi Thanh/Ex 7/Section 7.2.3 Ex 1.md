@@ -17,13 +17,13 @@ v  |[4, 3, 5, 6, 7, 2, 8]
 
 c) The numbers in the table below correspond to the du-paths in the previous table. The
 table indicates whether each test path tours each du-path with or without a sidetrip.
-   |direct |w/ sidetrip
-t1 |i      |
-t2 |       |i
-t3 |ii     |i
-t4 |iv	  |
-t5 |iii, v |
-t6 |       |iii, iv, v
+   |direct   |w/ sidetrip
+t1 |i        |
+t2 |         |i
+t3 |ii       |i
+t4 |iv	    |
+t5 |iii, v   |
+t6 |         |iii, iv, v
 
 d) Either t1 or t3 can be used to directly tour a path that satisfies all-defs for the def at node 0, and either t4 or t5 can be used to
 directly tour a path that satisfies all-defs for the def at node 3.
