@@ -11,13 +11,21 @@ M ::= "o" | "t" | "p" | "a" | "h"
 
 Answer:
 
-a) How many nonterminal symbols are in the grammar? 4
+a) How many nonterminal symbols are in the grammar? 
 
-b) How many terminal symbols are in the grammar? 13
+4
 
-c) Write two strings that are valid according to the BNF. 116 possible strings, including: wio, xf
+b) How many terminal symbols are in the grammar? 
 
-d) For each of your two strings, give two valid mutants of the string. Dozens for each string.
+13
+
+c) Write two strings that are valid according to the BNF.
+
+116 possible strings, including: wio, xf
+
+d) For each of your two strings, give two valid mutants of the string. 
+
+Dozens for each string.
 
 wio −→ wit, mio
 
