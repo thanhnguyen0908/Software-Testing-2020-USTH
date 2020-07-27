@@ -2,5 +2,5 @@ Write the predicate (only the predicate) to represent the requirement: “List a
 Also list non-wireless mice that retail for more than $50.”
 
 Asnwer: The predicate describing whether to list a given mouse is:
-((mouseT ype = wireless) ∧ ((retail > 100) ∨ (stock > 20)))∨ 
-(¬(mouseT ype = wireless) ∧ (retail > 50))
+
+((mouseT ype = wireless) ∧ ((retail > 100) ∨ (stock > 20)))∨(¬(mouseT ype = wireless) ∧ (retail > 50))
