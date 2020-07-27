@@ -1,4 +1,4 @@
-Thermostat.java:
+#Thermostat.java:
 
 import java.io.*;
 
@@ -85,7 +85,7 @@ public class Thermostat
    
 } // End Thermostat class
 
-Programmed Settings.java:
+#Programmed Settings.java:
 
 import java.util.*;
 
@@ -139,7 +139,7 @@ public class ProgrammedSettings
    }
 } // End ProgrammedSettings class
 
-DayType.java:
+#DayType.java:
 
 public enum DayType
 
@@ -148,7 +148,7 @@ public enum DayType
    WEEKDAY, WEEKEND
 }
 
-Period.java:
+#Period.java:
 
 
 public enum Period
