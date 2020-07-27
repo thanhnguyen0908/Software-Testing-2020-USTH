@@ -15,39 +15,36 @@ g) Give a test set that is guaranteed to detect all faults in figure 8.2.
 Answer:
 i. f = abc¯+ ¯abc¯
 a) Karnaugh map for f:
-a, b
-00 01 11 10
-0 1 1
-c 1
+         a, b
+     00 01 11 10
+    ____________ 
+  0 |1 |1 |  | |
+    ------------
+c 1 |  |  |  | |
+    
 Karnaugh map for ¯f:
-a, b
-00 01 11 10
-0 1 1
-c 1 1 1 1 1
-
+         a, b
+     00 01 11 10
+    ____________ 
+  0 |1 |  |  |1|
+    ------------
+c 1 |1 |1 |1 |1|
+    
 b) Nonredundant prime implicant representation for f:
 f = bc¯
+
 Nonredundant prime implicant representation for ¯f:
 ¯f = ¯b + c
+
 Note that f is a function of b and c only; a is irrelevant.
 
-c) For IC we choose the nonredundant prime implicant representations. Other choices are
-possible, of course. This leaves three implicants {bc, ¯
-¯b, c} in f and ¯f collectively. Test
-set {xT F, xF T} satisfies IC. Note that the second test, which is not a unique true point,
-satisfies both ¯b and c.
+c) For IC we choose the nonredundant prime implicant representations. Other choices are possible, of course. This leaves three implicants {bc, ¯¯b, c} in f and ¯f collectively. Test set {xT F, xF T} satisfies IC. Note that the second test, which is not a unique true point, satisfies both ¯b and c.
 
 ii. f = ¯a¯bc¯¯d + abcd
 b) Nonredundant prime implicant representation for f (Note: as given):
-f = ¯a¯bc¯
-¯d + abcd
+f = ¯a¯bc¯¯d + abcd
 Nonredundant prime implicant representation for ¯f:
-¯f = a¯b + bc¯+ c
-¯d + ¯ad
+¯f = a¯b + bc¯+ c¯d + ¯ad
+
 c) For IC we choose the nonredundant prime implicant representations. Other choices are
-possible, of course. This leaves six implicants {a¯
-¯bc¯
-¯d, abcd, a¯b, bc, c ¯
-¯d, ad¯ } in f and ¯f
-collectively. Test set {F F F F, T T T T, T F T F, F T F T} satisfies IC. Note that the third
-and fourth tests, which are not unique true points, each satisfy two implicants.
+possible, of course. This leaves six implicants {a¯¯bc¯¯d, abcd, a¯b, bc, c ¯¯d, ad¯ } in f and ¯f collectively. Test set {F F F F, T T T T, T F T F, F T F T} satisfies IC. Note that the third and fourth tests, which are not unique true points, each satisfy two implicants.
